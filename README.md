@@ -32,11 +32,11 @@ If the annotator doesn't work as expected, try refreshing the page.
 ## Installation
 
 To install the Web Annotator extension, follow these steps:
-1. Clone the repo
-2. Hit npm Install.
-3. Hit npm run watch so to make dist folder.
+1. Clone the repo.
+2. Run 'npm install' to install dependencies.
+3. Run 'npm run watch' to generate the dist folder.
 4. Open Chrome and go to chrome://extensions.
-5. Enable Developer mode (toggle switch in the top-right corner).
+5. Enable Developer mode using the toggle switch in the top-right corner.
 6. Click on "Load unpacked" and select the unzipped extension folder.
 
 
