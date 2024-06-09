@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "Annotation Extension",
+    "version": "1.0",
+    "permissions": [
+      "activeTab", 
+      "scripting", 
+      "storage",
+      "nativeMessaging",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+
+    "icons": {
+        "16": "drawing.png",
+        "48": "drawing.png",
+        "128": "drawing.png"
+    },
+
+    "web_accessible_resources": [
+    {
+      "resources": ["html2pdf.bundle.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+    
+  }
